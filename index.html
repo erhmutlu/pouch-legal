@@ -411,7 +411,7 @@
     </div>
     <h1>Penny</h1>
     <p class="subtitle">Privacy Policy</p>
-    <span class="effective-date">Effective February 6, 2026</span>
+    <span class="effective-date">Effective March 1, 2026</span>
 </header>
 
 <div class="page-wrapper">
@@ -459,7 +459,7 @@
         <section class="section" id="information-we-collect">
             <div class="glass-card">
                 <h2>Information We Collect</h2>
-                <p>All financial data you enter (accounts, transactions) and your app preferences are stored exclusively on your device. Nothing is transmitted to any server.</p>
+                <p>All financial data you enter (accounts, transactions) and your app preferences are stored on your device by default. Penny Pro subscribers who enable iCloud Sync have their data also stored in their private iCloud account, managed entirely by Apple.</p>
                 <p>Penny does <strong>not</strong> collect personal identity information, device identifiers, location data, analytics, biometrics, or cookies.</p>
             </div>
         </section>
@@ -468,9 +468,9 @@
         <section class="section" id="data-storage">
             <div class="glass-card">
                 <h2>How Your Data Is Stored</h2>
-                <p>All data is stored exclusively on your device using Apple's SwiftData framework (backed by SQLite) and UserDefaults for preferences.</p>
-                <p>Penny has no server, no cloud backend, and no external database. Your financial data never leaves your device unless you explicitly choose to export it.</p>
-                <p>Your data is protected by iOS app sandboxing and your device's built-in encryption capabilities.</p>
+                <p>All data is stored locally on your device using Apple's SwiftData framework (backed by SQLite) and UserDefaults for preferences.</p>
+                <p>Penny Pro subscribers can optionally enable iCloud Sync, which stores data in the user's private iCloud (CloudKit) container. Apple manages the iCloud infrastructure — for details, refer to <a href="https://www.apple.com/legal/privacy/" style="color: var(--primary); text-decoration: none;">Apple's Privacy Policy</a>. Without Penny Pro or with sync disabled, data stays on-device only.</p>
+                <p>Penny does not operate its own servers or external databases. Your data is protected by iOS app sandboxing and your device's built-in encryption capabilities.</p>
             </div>
         </section>
 
@@ -493,8 +493,9 @@
             <div class="glass-card">
                 <h2>Data Sharing &amp; Third Parties</h2>
                 <p>We do not share, sell, rent, or transmit your data to any third party.</p>
-                <p>Penny contains <strong>zero</strong> third-party SDKs, analytics services, advertising networks, or crash reporting tools.</p>
-                <p>Data only leaves your device if you explicitly initiate an export through the App's share sheet functionality.</p>
+                <p>Penny contains <strong>zero</strong> third-party SDKs, analytics services, advertising networks, or crash reporting tools. Penny uses Apple services only — iCloud for optional sync (Penny Pro) and the App Store for subscription management.</p>
+                <p>Apple processes subscription payments; Penny never accesses your payment details. For details on how Apple handles your data, refer to <a href="https://www.apple.com/legal/privacy/" style="color: var(--primary); text-decoration: none;">Apple's Privacy Policy</a>.</p>
+                <p>Data only leaves your device if you explicitly initiate an export or enable iCloud Sync.</p>
             </div>
         </section>
 
@@ -515,7 +516,7 @@
                 <h2>Data Deletion</h2>
                 <p>You can delete all your financial data at any time through <strong>Settings &gt; Delete All Data</strong>. This action is immediate and irreversible.</p>
                 <p>App preferences (theme, language, currency) persist after data deletion. To reset preferences, uninstall the App.</p>
-                <p>Uninstalling Penny from your device removes all associated data completely.</p>
+                <p>Uninstalling Penny from your device removes all local data completely. If iCloud Sync was enabled, iCloud data may persist after uninstalling. You can delete iCloud data via iOS Settings &gt; Apple ID &gt; iCloud &gt; Manage Storage.</p>
             </div>
         </section>
 
@@ -527,7 +528,7 @@
                 <ul>
                     <li><strong>App sandbox isolation</strong> — iOS prevents other apps from accessing Penny's data</li>
                     <li><strong>Encryption at rest</strong> — iOS Data Protection encrypts your data using your device passcode</li>
-                    <li><strong>No network transmission</strong> — your data never travels over any network</li>
+                    <li><strong>iCloud encryption</strong> — when Sync is enabled, data is encrypted in transit and at rest by Apple</li>
                     <li><strong>No credentials stored</strong> — Penny does not store passwords, tokens, or authentication credentials</li>
                 </ul>
             </div>
@@ -546,7 +547,7 @@
         <section class="section" id="international">
             <div class="glass-card">
                 <h2>Your Rights</h2>
-                <p>Penny is available in the EU, Turkey, and the USA. Since all data is stored locally on your device, there are no cross-border data transfers. We do not sell your personal information or engage in behavioral advertising.</p>
+                <p>Penny is available in the EU, Turkey, and the USA. Without iCloud Sync, all data stays on-device with no cross-border transfers. With iCloud Sync enabled, Apple may process data in accordance with their privacy policy and applicable data protection agreements. We do not sell your personal information or engage in behavioral advertising.</p>
                 <p>Regardless of your location, you can exercise your data rights directly within the App:</p>
                 <ul>
                     <li><strong>Access</strong> — view your data directly in the App</li>
@@ -579,7 +580,7 @@
 </div>
 
 <footer class="footer">
-    <p>Last updated: February 6, 2026</p>
+    <p>Last updated: March 1, 2026</p>
     <p style="margin-top: 6px;">Penny &mdash; Personal Finance, Private by Design</p>
 </footer>
 
