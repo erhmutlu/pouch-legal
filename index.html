@@ -56,24 +56,13 @@
             margin: 0 auto;
         }
 
-        .app-icon-placeholder {
+        .app-icon {
             width: 80px;
             height: 80px;
             border-radius: 18px;
-            background: var(--card-bg);
-            border: 1px dashed var(--text-tertiary);
             margin: 0 auto 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-        }
-
-        .app-icon-placeholder span {
-            font-size: 13px;
-            color: var(--text-tertiary);
-            letter-spacing: -0.08px;
+            display: block;
+            box-shadow: 0 2px 12px rgba(239, 98, 51, 0.18);
         }
 
         .header h1 {
@@ -405,9 +394,7 @@
 <body>
 
 <header class="header">
-    <div class="app-icon-placeholder">
-        <span>Icon</span>
-    </div>
+    <img src="AppLogo.png" alt="Pouch" class="app-icon" width="80" height="80">
     <h1>Pouch</h1>
     <p class="subtitle">Privacy Policy</p>
     <span class="effective-date">Effective March 1, 2026</span>
@@ -571,7 +558,7 @@
         <section class="section" id="contact">
             <div class="glass-card">
                 <h2>Contact Us</h2>
-                <p>If you have any questions about this Privacy Policy or Pouch's data practices, please contact us at <strong>pennybudgettracker@gmail.com</strong></p>
+                <p>If you have any questions about this Privacy Policy or Pouch's data practices, please contact us at <strong>contact@pouchtracker.app</strong></p>
             </div>
         </section>
 
